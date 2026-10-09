@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI chat bot</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="bot-info">
+                <i class="fa-solid fa-robot bot-icon"></i>
+                <div>
+                    <h2>AI Assistant</h2>
+                    <span class="status"><i class="fa-slid fa-circle"></i></span>
+                </div>
+            </div>
+            <button id="clear-btn" title="Tarixni tozalash"><i class="fa-solid fa-trash"></i></button>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <div class="message model">
+                <div class="bubble">
+                    Salom! Men sizga qanday yordam bera olaman?
+                </div>
+            </div>
+            <div class="typing-indicator hidden" id="typing-indicator">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        
+
+        <form class="chat-input-area" id="chat-form">
+            <input type="text" placeholder="Xabar yozing..." id="user-input">
+            <button type="submit" id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
